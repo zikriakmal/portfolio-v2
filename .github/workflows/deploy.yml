@@ -1,0 +1,17 @@
+name: Deploy on develop push
+
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Build and restart container
+        working-directory: ${{ github.workspace }}
+        run: docker compose up --build -d
