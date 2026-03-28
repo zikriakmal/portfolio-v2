@@ -15,7 +15,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Zikri Akmal Santoso — Senior Software Engineer",
+  title: "Zikri Akmal Santoso | Senior Software Engineer",
   description:
     "Portfolio of Zikri Akmal Santoso, a Senior Software Engineer with 5+ years building web, mobile, and backend systems with React, Angular, Go, and React Native.",
 };
