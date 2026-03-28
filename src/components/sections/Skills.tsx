@@ -100,7 +100,7 @@ export default function Skills() {
             ].map((tech) => (
               <span
                 key={tech}
-                className="px-4 py-1.5 rounded-full border border-gray-200 dark:border-white/10 bg-gray-50 dark:bg-white/5 text-gray-500 dark:text-white/50 text-sm hover:text-gray-800 dark:hover:text-white/80 hover:bg-gray-100 dark:hover:bg-white/10 transition-all cursor-default"
+                className="px-4 py-1.5 rounded-full border border-gray-200 dark:border-white/10 bg-gray-50 dark:bg-white/5 text-gray-500 dark:text-white/50 text-sm hover:text-gray-800 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-white/15 transition-all cursor-default"
               >
                 {tech}
               </span>

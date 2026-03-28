@@ -152,7 +152,7 @@ export default function Projects() {
               className={`px-5 py-2 rounded-full text-sm font-medium border transition-all duration-200 ${
                 activeFilter === f
                   ? "bg-gray-900/10 dark:bg-white/15 border-gray-300 dark:border-white/25 text-gray-900 dark:text-white shadow-inner"
-                  : "bg-gray-50 dark:bg-white/5 border-gray-200 dark:border-white/10 text-gray-500 dark:text-white/50 hover:text-gray-800 dark:hover:text-white/80 hover:bg-gray-100 dark:hover:bg-white/10"
+                  : "bg-gray-50 dark:bg-white/5 border-gray-200 dark:border-white/10 text-gray-500 dark:text-white/50 hover:text-gray-800 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-white/15"
               }`}
             >
               {f}
