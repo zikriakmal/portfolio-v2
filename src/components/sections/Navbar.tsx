@@ -43,8 +43,8 @@ function ThemeSelect() {
       <button
         onClick={() => setOpen((o) => !o)}
         className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium transition-all duration-200
-          text-gray-500 dark:text-white/50 hover:text-gray-800 dark:hover:text-white/80
-          hover:bg-gray-100 dark:hover:bg-white/8
+          text-gray-500 dark:text-white/60 hover:text-gray-800 dark:hover:text-white
+          hover:bg-gray-100 dark:hover:bg-white/15
           ${open ? "bg-gray-100 dark:bg-white/10 text-gray-800 dark:text-white" : ""}`}
         aria-label="Select theme"
       >
@@ -84,7 +84,7 @@ function ThemeSelect() {
                   ${open ? "opacity-100 translate-y-0" : "opacity-0 translate-y-1"}
                   ${isActive
                     ? "bg-blue-500/10 dark:bg-blue-400/10 text-blue-600 dark:text-blue-400"
-                    : "text-gray-600 dark:text-white/60 hover:bg-gray-100 dark:hover:bg-white/8 hover:text-gray-900 dark:hover:text-white"
+                    : "text-gray-600 dark:text-white/60 hover:bg-gray-100 dark:hover:bg-white/15 hover:text-gray-900 dark:hover:text-white"
                   }`}
               >
                 <span className="text-base">{opt.icon}</span>
@@ -160,7 +160,7 @@ function MobileThemeSelect() {
                   ${open ? "opacity-100 translate-y-0" : "opacity-0 translate-y-1"}
                   ${isActive
                     ? "bg-blue-500/10 dark:bg-blue-400/10 text-blue-600 dark:text-blue-400"
-                    : "text-gray-600 dark:text-white/60 hover:bg-gray-100 dark:hover:bg-white/8 hover:text-gray-900 dark:hover:text-white"
+                    : "text-gray-600 dark:text-white/60 hover:bg-gray-100 dark:hover:bg-white/15 hover:text-gray-900 dark:hover:text-white"
                   }`}
               >
                 <span className="text-base">{opt.icon}</span>
@@ -219,7 +219,7 @@ export default function Navbar() {
             className={`px-4 py-1.5 rounded-full text-sm font-medium transition-all duration-200 ${
               isHome && activeSection === section
                 ? "bg-gray-900/10 dark:bg-white/15 text-gray-900 dark:text-white shadow-inner"
-                : "text-gray-500 dark:text-white/50 hover:text-gray-800 dark:hover:text-white/80 hover:bg-gray-100 dark:hover:bg-white/8"
+                : "text-gray-500 dark:text-white/60 hover:text-gray-800 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-white/15"
             }`}
           >
             {label}
@@ -231,7 +231,7 @@ export default function Navbar() {
           className={`px-4 py-1.5 rounded-full text-sm font-medium transition-all duration-200 ${
             pathname === "/tennis"
               ? "bg-green-500/20 text-green-600 dark:text-green-400 shadow-inner border border-green-500/30"
-              : "text-gray-500 dark:text-white/50 hover:text-gray-800 dark:hover:text-white/80 hover:bg-gray-100 dark:hover:bg-white/8"
+              : "text-gray-500 dark:text-white/60 hover:text-gray-800 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-white/15"
           }`}
         >
           🎾 Tennis
@@ -270,7 +270,7 @@ export default function Navbar() {
                 className={`w-full text-left px-6 py-3.5 text-sm font-medium border-b border-gray-100 dark:border-white/5 transition-colors ${
                   isHome && activeSection === section
                     ? "text-gray-900 dark:text-white bg-gray-100 dark:bg-white/10"
-                    : "text-gray-600 dark:text-white/60 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-white/5"
+                    : "text-gray-600 dark:text-white/60 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-white/10"
                 }`}
               >
                 {label}
@@ -282,7 +282,7 @@ export default function Navbar() {
               className={`flex items-center gap-2 w-full px-6 py-3.5 text-sm font-medium transition-colors ${
                 pathname === "/tennis"
                   ? "text-green-600 dark:text-green-400 bg-green-500/10"
-                  : "text-gray-600 dark:text-white/60 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-white/5"
+                  : "text-gray-600 dark:text-white/60 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-white/10"
               }`}
             >
               🎾 Tennis
