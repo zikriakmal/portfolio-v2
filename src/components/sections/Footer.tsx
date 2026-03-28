@@ -7,7 +7,8 @@ export default function Footer() {
           Built with
           <span className="text-blue-400/70">Next.js</span>·
           <span className="text-purple-400/70">Redux Toolkit</span>·
-          <span className="text-cyan-400/70">Tailwind</span>
+          <span className="text-cyan-400/70">Tailwind</span>·
+          <span className="text-pink-400/70">TypeScript</span>
         </span>
       </div>
     </footer>
