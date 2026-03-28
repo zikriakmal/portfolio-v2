@@ -33,7 +33,7 @@ function ProjectModal({ project }: { project: Project }) {
 
       {/* Modal */}
       <div
-        className="relative z-10 w-full max-w-lg rounded-3xl border border-gray-200 dark:border-white/15 bg-white/90 dark:bg-white/8 backdrop-blur-2xl shadow-[0_24px_80px_rgba(0,0,0,0.15)] dark:shadow-[0_24px_80px_rgba(0,0,0,0.6)] p-8 space-y-6"
+        className="relative z-10 w-full max-w-lg rounded-3xl border border-gray-200 dark:border-white/15 bg-white/95 dark:bg-[#13131f]/98 backdrop-blur-2xl shadow-[0_24px_80px_rgba(0,0,0,0.15)] dark:shadow-[0_24px_80px_rgba(0,0,0,0.6)] p-8 space-y-6"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close */}
@@ -57,7 +57,7 @@ function ProjectModal({ project }: { project: Project }) {
               <span
                 className={`w-2 h-2 rounded-full ${project.status === "completed" ? "bg-green-400" : "bg-yellow-400"}`}
               />
-              <span className="text-xs text-gray-400 dark:text-white/40 capitalize">
+              <span className="text-xs text-gray-400 dark:text-white/60 capitalize">
                 {project.status}
               </span>
             </div>
@@ -65,13 +65,13 @@ function ProjectModal({ project }: { project: Project }) {
         </div>
 
         {/* Long description */}
-        <p className="text-gray-600 dark:text-white/65 text-sm leading-relaxed">
+        <p className="text-gray-600 dark:text-white/75 text-sm leading-relaxed">
           {project.longDescription}
         </p>
 
         {/* Tech stack */}
         <div>
-          <p className="text-xs text-gray-400 dark:text-white/40 uppercase tracking-widest mb-3 font-medium">
+          <p className="text-xs text-gray-400 dark:text-white/60 uppercase tracking-widest mb-3 font-medium">
             Tech Stack
           </p>
           <div className="flex flex-wrap gap-2">
@@ -90,7 +90,7 @@ function ProjectModal({ project }: { project: Project }) {
               href={project.githubUrl}
               target="_blank"
               rel="noreferrer"
-              className="flex-1 py-2.5 rounded-xl border border-gray-200 dark:border-white/15 bg-gray-50 dark:bg-white/8 text-gray-600 dark:text-white/70 text-sm font-medium text-center hover:bg-gray-100 dark:hover:bg-white/15 hover:text-gray-900 dark:hover:text-white transition-all"
+              className="flex-1 py-2.5 rounded-xl border border-gray-200 dark:border-white/20 bg-gray-50 dark:bg-white/10 text-gray-600 dark:text-white/80 text-sm font-medium text-center hover:bg-gray-100 dark:hover:bg-white/20 hover:text-gray-900 dark:hover:text-white transition-all"
             >
               GitHub →
             </a>
@@ -106,7 +106,7 @@ function ProjectModal({ project }: { project: Project }) {
             </a>
           )}
           {!project.githubUrl && !project.liveUrl && (
-            <div className="flex-1 py-2.5 rounded-xl border border-gray-200 dark:border-white/10 bg-gray-50 dark:bg-white/5 text-gray-400 dark:text-white/30 text-sm text-center">
+            <div className="flex-1 py-2.5 rounded-xl border border-gray-200 dark:border-white/15 bg-gray-50 dark:bg-white/8 text-gray-400 dark:text-white/50 text-sm text-center">
               Links coming soon
             </div>
           )}
@@ -233,7 +233,7 @@ function ProjectCard({
 
       {/* View more */}
       <div className="pt-1">
-        <span className="text-xs text-gray-400 dark:text-white/30 group-hover:text-gray-600 dark:group-hover:text-white/60 transition-colors">
+        <span className="text-xs text-gray-400 dark:text-white/50 group-hover:text-gray-600 dark:group-hover:text-white/80 transition-colors">
           Click to view details →
         </span>
       </div>
