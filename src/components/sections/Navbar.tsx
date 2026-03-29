@@ -204,7 +204,12 @@ export default function Navbar() {
   }, [dispatch]);
 
   const scrollTo = (section: string) => {
-    document.getElementById(section)?.scrollIntoView({ behavior: "smooth" });
+    const el = document.getElementById(section);
+    if (el) {
+      const navHeight = 80;
+      const top = el.getBoundingClientRect().top + window.scrollY - navHeight;
+      window.scrollTo({ top, behavior: "smooth" });
+    }
     dispatch(closeNav());
   };
 
