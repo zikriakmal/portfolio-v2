@@ -206,7 +206,8 @@ export default function Navbar() {
   const scrollTo = (section: string) => {
     const el = document.getElementById(section);
     if (el) {
-      const navHeight = 80;
+      const nav = document.querySelector("nav");
+      const navHeight = (nav?.getBoundingClientRect().height ?? 80) + 16;
       const top = el.getBoundingClientRect().top + window.scrollY - navHeight;
       window.scrollTo({ top, behavior: "smooth" });
     }
