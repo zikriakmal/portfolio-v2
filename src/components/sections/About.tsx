@@ -19,7 +19,7 @@ const interests = [
 
 export default function About() {
   return (
-    <section id="about" className="relative py-32 px-4">
+    <section id="about" className="relative py-20 px-4">
       {/* Ambient */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
         <div className="absolute top-1/2 right-0 w-[400px] h-[400px] rounded-full bg-purple-600/10 blur-[100px]" />

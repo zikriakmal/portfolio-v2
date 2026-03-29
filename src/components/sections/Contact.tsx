@@ -20,7 +20,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="relative py-32 px-4">
+    <section id="contact" className="relative py-20 px-4">
       {/* Ambient */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
         <div className="absolute -bottom-20 left-0 w-[500px] h-[500px] rounded-full bg-purple-600/15 blur-[120px]" />

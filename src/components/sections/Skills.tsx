@@ -26,7 +26,7 @@ export default function Skills() {
   );
 
   return (
-    <section id="skills" className="relative py-32 px-4">
+    <section id="skills" className="relative py-20 px-4">
       {/* Ambient */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
         <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] rounded-full bg-cyan-600/10 blur-[100px]" />

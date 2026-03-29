@@ -127,7 +127,7 @@ export default function Projects() {
       : projects.filter((p) => p.category === activeFilter);
 
   return (
-    <section id="projects" className="relative py-32 px-4">
+    <section id="projects" className="relative py-20 px-4">
       {/* Ambient */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
         <div className="absolute top-0 left-1/4 w-[500px] h-[500px] rounded-full bg-blue-600/10 blur-[120px]" />
