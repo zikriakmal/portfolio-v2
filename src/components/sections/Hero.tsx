@@ -48,7 +48,7 @@ export default function Hero() {
             </span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-500 dark:text-white/50 font-light">
-            Senior Software Engineer
+            Software Engineer
           </p>
         </div>
 
