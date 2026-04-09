@@ -36,7 +36,7 @@ export default function Hero() {
 
         {/* Status pill */}
         <div className="flex justify-center">
-          <GlassBadge color="green">✦ Senior Software Engineer @ Alliance Bank Malaysia</GlassBadge>
+          <GlassBadge color="green">Software Engineer</GlassBadge>
         </div>
 
         {/* Heading */}
